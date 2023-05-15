@@ -1,6 +1,15 @@
 # SchedulePayementDemo
 
-Aplicação Demo para agendamentro de transferências
+Aplicação Demo para agendamentro de transferências:
+
+<b>REGRAS </b>
+A: Tranferências no mesmo dia do agendamento tem uma taxa de $3 mais 3% do valor a ser transferido;
+B: Tranferências até 10 dias da data de agendamento possuem uma taxa de $12.
+C: Operações do tipo C tem uma taxa regressiva conforme a data de transferência:
+   acima de 10 dias da data de agendamento 8.2%
+   acima de 20 dias da data de agendamento 6.9%
+   acima de 30 dias da data de agendamento 4.7%
+   acima de 40 dias da data de agendamento 1.7%
 <br/>
 
 ## Tabela 
