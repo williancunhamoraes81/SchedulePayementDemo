@@ -22,32 +22,39 @@ DESIGN PATTERN - Chain of Responsibility
 #### 📋 Clonar repositório
 
 ```
-git clone https://github.com/williancunhamoraes81/GoldenRaspberryAwards.git
+git clone https://github.com/williancunhamoraes81/SchedulePayementDemo.git
 ```
 
 #### 🚢 Executar serviços necessários
 
-Essa API utiliza o H2 como banco de dados. Disponível apenas para utilização localhost:9800
+Essa API utiliza o H2 como banco de dados. Disponível apenas para utilização localhost:8200
+http://localhost:8200/api/h2-console
 
 
 #### 🚢 Utilizando API
 
-localhost:9800/api/filter { GET }
+<b>CURL para realizar uma transferência</b>
 <br/>
-localhost:9800/api/list-all { GET }
+curl --location 'localhost:8200/api/agendamento/transferencia' \
+--header 'Content-Type: application/json' \
+--data '{
+   "contaOrigem":"0002",
+   "contaDestino":"0001",   
+   "valorOriginalTransferido":1030,
+   "dataTransferencia":"2023-07-16",
+   "dataAgendamento": "2023-05-15"
+}'
 <br/>
-localhost:9800/api/{id} { GET }
-<br/>
-localhost:9800/api/{id} { DELETE }
-<br/>
-localhost:9800/api/{id} { PUT }
-<br/>
-localhost:9800/api/{Movie} { POST }
-<br/>
+
+<b>CURL para realizar uma pesquisa de agendameto</b>
+
+curl --location 'localhost:8200/api/agendamento/lista/0002' \
+--data ''
 
 #### ⚙️Compilar a aplicação
 
 ```
+mvn clean install
 mvn compile
 ```
 
