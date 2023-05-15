@@ -3,6 +3,8 @@
 Aplicação Demo para agendamentro de transferências:
 
 <b>REGRAS </b>
+<br>
+<br>
 A: Tranferências no mesmo dia do agendamento tem uma taxa de $3 mais 3% do valor a ser transferido;
 <br>
 B: Tranferências até 10 dias da data de agendamento possuem uma taxa de $12.
