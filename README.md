@@ -45,9 +45,9 @@ curl --location 'localhost:8200/api/agendamento/transferencia' \
    "dataAgendamento": "2023-05-15"
 }'
 <br/>
+<br/>
 
 <b>CURL para realizar uma pesquisa de agendameto</b>
-
 curl --location 'localhost:8200/api/agendamento/lista/0002' \
 --data ''
 
