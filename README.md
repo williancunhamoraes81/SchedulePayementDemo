@@ -50,9 +50,8 @@ curl --location 'localhost:8200/api/agendamento/transferencia' \
 <b>CURL para realizar uma pesquisa de agendameto</b>
 curl --location 'localhost:8200/api/agendamento/lista/0002' \
 --data ''
-
+<br>
 #### ⚙️Compilar a aplicação
-
 ```
 mvn clean install
 mvn compile
